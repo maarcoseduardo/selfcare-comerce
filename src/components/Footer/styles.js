@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
     
-    height: 220px;
+    height: 240px;
     max-width: 100%;
     min-width: 480px;
     position: relative;
@@ -21,7 +21,7 @@ export const FooterContainer = styled.footer`
     justify-content: space-between;
     padding: 20px 65px 20px 75px;
 
-    @media only screen and (min-width: 480px) and (max-width: 835px){
+    @media only screen and (min-width: 340px) and (max-width: 835px){
     
       display: block;
       text-align: center;
@@ -44,7 +44,7 @@ export const FooterContainer = styled.footer`
  export const Div = styled.div`
     
     width: 400px;
-    @media only screen and (min-width: 490px) and (max-width: 835px){
+    @media only screen and (min-width: 340px) and (max-width: 835px){
     width: 100%;
     padding: 0 60px;
    

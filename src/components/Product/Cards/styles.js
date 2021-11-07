@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 export const ListContainerCard = styled.li`
 
@@ -13,7 +13,7 @@ export const ListContainerCard = styled.li`
     }    
 `;
 
-export const ContainerRespiro = styled.div`
+export const ContainerBreathe = styled.div`
 
     padding: 20px;
     text-align: center;
@@ -64,8 +64,22 @@ export const AnchorButtons = styled(Link)`
 
     text-decoration: none;
 
-    & + a{
+    & + button{
         margin-top: 3px;
     }
+
+`;
+export const Button = styled.button`
+     display: block;
+
+    width: 70%;
+    margin: 0 auto;
+
+    padding: 5px 0;
+    background: #000;
+    color: #FFF;
+    border-radius: 3px;
+
+    cursor: pointer;
 
 `;

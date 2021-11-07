@@ -1,19 +1,24 @@
 import React from 'react';
-// import AirspunImg from '../imgs/Airspun.jpg'
+
 import { 
-    DivContainer 
+    DivContainer,
+    Img
 } from './styles';
 
 export function Details(){
 
-
+    
     return (
         <DivContainer className="container">
             <div>
-                <img src=""/>
+                <div className="card-imagem">
+                {/* <Img src={AirspunImg} alt="airspun"/> */}
+                </div>
 
                 <article>
                     ASDSADASDSADASDSADSADAS
+                    lorem ipsum dolor sit amet, consectetur adip
+                    lorem ipsum dolor sit amet, consectetur
                 </article>
             </div>
         </DivContainer>

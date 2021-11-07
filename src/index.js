@@ -64,7 +64,7 @@ createServer({
           name: "Bico Borrifador Aplicador de Toppik",
           img: ["/imgs/GabrielleChanel.jpg"],
           price: 90.5,
-          category: "Perfume",
+          category: "Fragrance",
           mark: "PRESSED",
           shortDesc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.",
           Desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",

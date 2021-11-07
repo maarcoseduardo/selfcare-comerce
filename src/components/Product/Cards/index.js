@@ -1,6 +1,6 @@
 import {
     ListContainerCard,
-    ContainerRespiro,
+    ContainerBreathe,
     Anchor,
     Img,
     DivName,
@@ -8,17 +8,18 @@ import {
     H4,
     Span,
     DivPrices,
-    AnchorButtons
+    AnchorButtons,
+    Button
 } from './styles';
 
-export function Cards({name, img, category, price}) {
+export function Cards({ name, img, category, price }) {
 
     return (
         <ListContainerCard>
-            <ContainerRespiro >
+            <ContainerBreathe >
                 <Anchor to="/details">
                     <Img src={img}
-                         alt={name}/>
+                        alt={name} />
                 </Anchor>
                 <DivName>
                     <Paragraph>{category}</Paragraph>
@@ -29,8 +30,8 @@ export function Cards({name, img, category, price}) {
                     <Span>Parcelas</Span>
                 </DivPrices>
                 <AnchorButtons to="/details">VER MAIS</AnchorButtons>
-                <AnchorButtons href="">ADICIONAR</AnchorButtons>
-            </ContainerRespiro>
+                <Button >ADICIONAR</Button>
+            </ContainerBreathe>
         </ListContainerCard>
     )
 }
