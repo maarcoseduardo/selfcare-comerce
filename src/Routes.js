@@ -11,7 +11,7 @@ export function Routes() {
             <Route exact path="/">
                 <Main />
             </Route>
-            <Route exact path="/details">
+            <Route exact path="/details/:identificationPage">
                 <Details />
             </Route>
         </Switch>

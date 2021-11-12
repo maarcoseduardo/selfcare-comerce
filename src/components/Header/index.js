@@ -13,6 +13,7 @@ import {
     SpanLogo,
     UnList,
     List,
+    Anchor,
     ImgList
 }
     from './styles';
@@ -29,31 +30,26 @@ export function Header() {
                         alt="Star" 
                         />
                         
-                        <SpanLogo>selfcare</SpanLogo>
+                        <SpanLogo><Anchor to="/">selfcare</Anchor></SpanLogo>
                     </DivLogo>
                     <Nav>
                         <UnList>
-                            <List 
-                            className="filter-green">
-                                <ImgList 
-                                src={imgMagnifyingGlass}
-                                alt="Magnifying Glass"/>
+                            <List className="filter-green">
+                                    <ImgList src={imgMagnifyingGlass}alt="Magnifying Glass"/> 
                             </List>
 
                             <List 
                             className="filter-green">
-                                <ImgList 
-                                src={imgUser}
-                                alt="User Login"
-                                 />
+                                <Anchor to="/login">
+                                    <ImgList src={imgUser}alt="User Login"/>
+                                </Anchor>
                             </List>
 
                             <List 
                             className="filter-green">
-                                <ImgList 
-                                src={imgCart} 
-                                alt="Cart Shop"
-                                />
+                                <Anchor to="/cart">
+                                    <ImgList src={imgCart} alt="Cart Shop"/>
+                                </Anchor>
                             </List>
                         </UnList>
                     </Nav>

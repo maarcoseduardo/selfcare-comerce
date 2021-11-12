@@ -11,8 +11,6 @@ import {
 
 } from "./styles";
 
-
-
 export function Main() {
 
     return (

@@ -11,10 +11,11 @@ export function Product() {
 
     return (
         <React.Fragment>
-            <Unlist>
+            <Unlist >
                 {card.map(product =>
                     <Cards
                         key={product.id}
+                        id={product.id}
                         name={product.name}
                         img={product.img}
                         alt={product.name}
@@ -25,5 +26,4 @@ export function Product() {
             </Unlist>
         </React.Fragment>
     )
-
 }

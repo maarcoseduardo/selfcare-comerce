@@ -1,11 +1,12 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const HeaderContainer = styled.header`
 
     height: 50px;
     width: 100%;
 
     background: var(--background-page);
+    position: fixed;
 `;
 
 export const HeaderTop = styled.div`
@@ -26,7 +27,15 @@ export const DivLogo = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
+    &:hover{
+        filter: invert(49%) 
+        sepia(59%) 
+        saturate(568%) 
+        hue-rotate(50deg) 
+        brightness(102%) 
+        contrast(91%);
+    }
 `;
 
 export const Nav = styled.nav`
@@ -51,12 +60,16 @@ export const UnList = styled.ul`
 
 export const List = styled.li`
 
-    filter: invert(49%) 
-    sepia(59%) 
-    saturate(568%) 
-    hue-rotate(50deg) 
-    brightness(102%) 
-    contrast(91%);
+filter: invert(49%) 
+sepia(59%) 
+saturate(568%) 
+hue-rotate(50deg) 
+brightness(102%) 
+contrast(91%);
+`;
+
+export const Anchor = styled(Link)`
+    text-decoration: none;
 `;
 
 export const ImgList = styled.img`

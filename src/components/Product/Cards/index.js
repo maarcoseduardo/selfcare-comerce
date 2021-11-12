@@ -12,12 +12,12 @@ import {
     Button
 } from './styles';
 
-export function Cards({ name, img, category, price }) {
+export function Cards({ id, name, img, category, price }) {
 
     return (
         <ListContainerCard>
             <ContainerBreathe >
-                <Anchor to="/details">
+                <Anchor to={`/details/${id}`}>
                     <Img src={img}
                         alt={name} />
                 </Anchor>
@@ -29,8 +29,8 @@ export function Cards({ name, img, category, price }) {
                     <Paragraph>R$ {price}</Paragraph>
                     <Span>Parcelas</Span>
                 </DivPrices>
-                <AnchorButtons to="/details">VER MAIS</AnchorButtons>
-                <Button >ADICIONAR</Button>
+                <AnchorButtons to={`/details/${id}`}>VER MAIS</AnchorButtons>
+                <Button>ADICIONAR</Button>
             </ContainerBreathe>
         </ListContainerCard>
     )

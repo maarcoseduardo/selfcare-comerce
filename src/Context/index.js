@@ -9,7 +9,6 @@ import { api } from '../Services/api';
 
 const CardContext = createContext();
 
-
 export function CardProvider({ children }) {
 
     const [card, setCard] = useState([]);
