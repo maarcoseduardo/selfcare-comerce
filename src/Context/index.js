@@ -14,7 +14,7 @@ export function CardProvider({ children }) {
     const [card, setCard] = useState([]);
 
     useEffect(() => {
-        api.get('http://localhost:3000/')
+        api.get('/')
             .then(response => setCard(response.data))
     }, [])
     return (

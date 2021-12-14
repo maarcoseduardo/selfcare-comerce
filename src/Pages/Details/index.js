@@ -33,7 +33,7 @@ export function Details() {
                             <Article>
                                 <H1>{product.name}</H1>
                                 <SpanOld>De R${product.oldPrice} por</SpanOld>
-                                    <Span>Por R${product.price}</Span>
+                                    <Span>R${product.price}</Span>
                                 <Paragraph>{product.desc}</Paragraph>
                                 <HR/>
                                 <Button src="">Adicionar ao carrinho</Button>

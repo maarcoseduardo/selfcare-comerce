@@ -1,4 +1,5 @@
 import { Switch, Route } from "react-router-dom";
+import { Cart } from "./Pages/Cart";
 import { Details } from "./Pages/Details";
 
 import { Main } from './Pages/Main';
@@ -13,6 +14,9 @@ export function Routes() {
             </Route>
             <Route exact path="/details/:identificationPage">
                 <Details />
+            </Route>
+            <Route exact path="/cart">
+                <Cart />
             </Route>
         </Switch>
     );
