@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.section`
     height: 450px;
     width: 100%;
@@ -8,127 +9,36 @@ export const Container = styled.section`
     justify-content: space-between;
     padding: 30px 70px;
 
-    @media screen and (min-width: 400px) and (max-width: 1050px) {
+    @media screen and (min-width: 400px) and (max-width: 1130px) {
         display: block;
-        height: 600px;
+        height: 750px;
     }
 `;
 
+export const H2 = styled.h2`
+    margin-bottom: 10px;
 
-export const Table = styled.table`
-    width: 690px;
-    height: 115px;
-    /* background: green; */
-    border-collapse: collapse;
+    font-size: 2rem;
+`;
 
-    @media screen and (min-width: 1450px) and (max-width: 1555px) {
-        width: 950px;
-    }
-    @media screen and (min-width: 1300px) and (max-width: 1450px) {
-        width: 800px;
-    }
-    @media screen and (min-width: 1172px) and (max-width: 1300px) {
-        width: 600px;
-    }
-    @media screen and (min-width: 1050px) and (max-width: 1172px) {
-        width: 550px;
-    }
-    @media screen and (min-width: 400px) and (max-width: 1050px) {
+export const Section = styled.section`
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 90px;
+
+    align-items: center;
+
+    @media screen and (min-width: 800px) and (max-width: 1130px) {
         width: 100%;
         margin-bottom: 30px;
     }
-`;
-
-export const Thead = styled.thead`
-    
-    width: 100%;
-    height: 25px;
-`;
-
-export const TableRow = styled.tr`
-
-    display: flex;
-
-    width: 100%;
-    height: 25px;
-
-    align-items: center;
-    /* background-color: yellow; */
-    border-bottom: 1px solid var(--line-division);
-`;
-
-export const ThItem = styled.th`
-    width: 280px;
-
-    @media screen and (min-width: 1450px) and (max-width: 1550px) {
-        width: 450px;
+    @media screen and (min-width: 400px) and (max-width: 800px) {
+        display: block;
+        width: 100%;
+        height: 280px;
+        margin-bottom:;
     }
-    @media screen and (min-width: 1300px) and (max-width: 1450px) {
-        width: 370px;
-    }
-    @media screen and (min-width: 1172px) and (max-width: 1300px) {
-        width: 280px;
-    }
-    @media screen and (min-width: 1050px) and (max-width: 1172px) {
-        width: 250px;
-    }
-    @media screen and (min-width: 1000px) and (max-width: 1050px) {
-        width: 450px;  
-    }
-    @media screen and (min-width: 950px) and (max-width: 1000px) {
-        width: 400px;  
-    }
-    @media screen and (min-width: 900px) and (max-width: 950px) {
-        width: 350px;  
-    }
-    @media screen and (min-width: 850px) and (max-width: 900px) {
-        width: 320px;  
-    }
-`;
-
-export const ThGrid = styled.th`
-    width: 190px;
-
-    @media screen and (min-width: 1050px) and (max-width: 1172px) {
-        width: 190px;
-    }
-    @media screen and (min-width: 400px) and (max-width: 1050px) {
-        width: 190px;
-    }
-`;
-
-export const Th = styled.th`
-    width: 85px;
-
-    @media screen and (min-width: 1450px) and (max-width: 1550px) {
-        width: 155px;
-    }
-    @media screen and (min-width: 1300px) and (max-width: 1450px) {
-        width: 120px;
-    }
-    @media screen and (min-width: 1172px) and (max-width: 1300px) {
-        width: 95px;
-    }
-    @media screen and (min-width: 1050px) and (max-width: 1172px) {
-        width: 60px;
-    }
-    @media screen and (min-width: 875px) and (max-width: 1050px) {
-        width: 100px; //DIMINUIR TAMANHO DO TH PARA AJUSTAR COM RESPONSIVIDADE
-    }
-    @media screen and (min-width: 820px) and (max-width: 875px) {
-        width: 70px;
-    }
-    @media screen and (min-width: 400px) and (max-width: 820px) {
-        width: 60px;
-    }
-`;
-
-
-export const Tbody = styled.tbody`
-    display: block;
-    
-    width: 100%;
-    height: 115px;
 `;
 
 export const Tr = styled.tr`
@@ -151,16 +61,19 @@ export const TdItem = styled.td`
     @media screen and (min-width: 1172px) and (max-width: 1300px) {
         width: 95px;
     }
-    @media screen and (min-width: 1050px) and (max-width: 1172px) {
-        width: 60px;
+    @media screen and (min-width: 1130px) and (max-width: 1172px) {
+        width: 95px;
+    }
+    @media screen and (min-width: 1050px) and (max-width: 1130px) {
+        width: 95px;
     }
     @media screen and (min-width: 875px) and (max-width: 1050px) {
         width: 100px; //DIMINUIR TAMANHO DO TH PARA AJUSTAR COM RESPONSIVIDADE
     }
-    @media screen and (min-width: 820px) and (max-width: 875px) {
+    @media screen and (min-width: 800px) and (max-width: 875px) {
         width: 70px;
     }
-    @media screen and (min-width: 400px) and (max-width: 820px) {
+    @media screen and (min-width: 400px) and (max-width: 800px) {
         width: 60px;
     }
 `;
@@ -183,8 +96,11 @@ export const Div = styled.div`
     @media screen and (min-width: 1172px) and (max-width: 1300px) {
         width: 280px;
     }
-    @media screen and (min-width: 1050px) and (max-width: 1172px) {
+    @media screen and (min-width: 1130px) and (max-width: 1172px) {
         width: 250px;
+    }
+    @media screen and (min-width: 1050px) and (max-width: 1130px) {
+        width: 490px;
     }
     @media screen and (min-width: 1000px) and (max-width: 1050px) {
         width: 450px;  
@@ -195,8 +111,11 @@ export const Div = styled.div`
     @media screen and (min-width: 900px) and (max-width: 950px) {
         width: 350px;  
     }
-    @media screen and (min-width: 850px) and (max-width: 900px) {
+    @media screen and (min-width: 800px) and (max-width: 900px) {
         width: 320px;  
+    }
+    @media screen and (min-width: 400px) and (max-width: 800px) {
+        width: 100%;
     }
 `;
 
@@ -209,30 +128,50 @@ export const Img = styled.img`
     height: 75px;
 `;
 
+
 export const Span = styled.span`
     padding: 5px;
+    @media screen and (min-width: 300px) and (max-width: 800px) {
+        display:block;
+        text-align: center;
+    }
+`;
+
+export const DivAddRemove = styled.div`
+
+    @media screen and (min-width: 300px) and (max-width: 800px) {
+        width: 120px;
+        margin: 20px auto;
+    }
 `;
 
 export const DivGrid = styled.div`
     display: grid;
+    height: 30px;
+    margin-bottom: 5px;
     grid-template-columns: 40px 40px 40px;
-    margin: 0 35px;
     text-align: center;
+    align-items: center;
+
+
+    border: 1px solid black;
+    border-radius: 10px;
 `;
 
 export const SpanGrid = styled.span`
-
 `;
 
 // Custom Buy Menu
-export const ButtonGrid = styled.button`
+export const ButtonAddRemove = styled.button`
     width: 100%;
-    background-color: none;
-    color: green;
-
-    font-size:16px;
     
+    background: none;
+    border: none;
+    color: green;
+    
+    font-size:16px;
     font-weight: bold;
+    cursor: pointer;
 
 `;
 

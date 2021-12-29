@@ -1,26 +1,21 @@
 import React from 'react';
 
+import { useCard } from '../../Context'
 import AnnmarieImg from './Annmarie.jpg'
 
 import {
     Container,
-    Table,
-    Thead,
-    TableRow,
-    ThItem,
-    Th,
-    ThGrid,
-    Tbody,
+    H2,
+    Section,
     Tr,
     Div,
-    Td,
     H3,
     Img,
-    TdItem,
     Span,
+    DivAddRemove,
     DivGrid,
     SpanGrid,
-    ButtonGrid,
+    ButtonAddRemove,
     ContainerBuy,
     TableBuy,
     TbodyBuy,
@@ -36,46 +31,32 @@ import {
 
 export function Cart() {
 
+    const {card} = useCard();
+
     return (
         <Container>
-            <Table>
-                <Thead>
-                    <TableRow>
-                        <ThItem>Item</ThItem>
-                        <Th>Preço</Th>
-                        <ThGrid>Quantidade</ThGrid>
-                        <Th>Total</Th>
-                    </TableRow>
-                </Thead>
-                <Tbody>
-                    <Tr>
-                        <Td>
-                            <Div>
-                                <Img src={AnnmarieImg}/>
-                                <H3>Nome daaaaaaaaao Produto</H3>
-                            </Div>
-                        </Td>
-                        <TdItem>
-                            <Span>R$ 150,0</Span>
-                        </TdItem>
-                        <TdItem>
-                            <DivGrid>
-                                <SpanGrid>
-                                    <ButtonGrid>-</ButtonGrid>
-                                </SpanGrid>
-                                <SpanGrid>0</SpanGrid>
-                                <SpanGrid>
-                                    <ButtonGrid>+</ButtonGrid>
-                                </SpanGrid>
-                            </DivGrid>
-                            <SpanGrid>remover</SpanGrid>
-                        </TdItem>
-                        <TdItem>
-                            <Span>R$ 1010,0</Span>
-                        </TdItem>
-                    </Tr>
-                </Tbody>
-            </Table>
+            <Section>
+                <Div>
+                    <Img src={AnnmarieImg}/>
+                    <H3>Nome daaaaaaaaao Produto</H3>
+                </Div>
+                <Span>R$ 15000,0</Span>
+                <DivAddRemove>
+                    <DivGrid>
+                        <SpanGrid>
+                            <ButtonAddRemove>-</ButtonAddRemove>
+                        </SpanGrid>
+                        <SpanGrid>0</SpanGrid>
+                        <SpanGrid>
+                            <ButtonAddRemove>+</ButtonAddRemove>
+                        </SpanGrid>
+                    </DivGrid>
+                    <SpanGrid>
+                        <ButtonAddRemove>remover</ButtonAddRemove>
+                    </SpanGrid>
+                </DivAddRemove>
+                <Span>R$ 1010,0</Span>
+            </Section>
             <ContainerBuy className="margins-respiro">
                 <H3Buy>Resumo do Pedido</H3Buy>
                 <TableBuy>
