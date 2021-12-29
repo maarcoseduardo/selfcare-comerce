@@ -5,7 +5,6 @@ import AnnmarieImg from './Annmarie.jpg'
 
 import {
     Container,
-    H2,
     Section,
     Tr,
     Div,
@@ -31,8 +30,6 @@ import {
 
 export function Cart() {
 
-    const {card} = useCard();
-
     return (
         <Container>
             <Section>
@@ -57,7 +54,7 @@ export function Cart() {
                 </DivAddRemove>
                 <Span>R$ 1010,0</Span>
             </Section>
-            <ContainerBuy className="margins-respiro">
+            <ContainerBuy>
                 <H3Buy>Resumo do Pedido</H3Buy>
                 <TableBuy>
                     <TbodyBuy>

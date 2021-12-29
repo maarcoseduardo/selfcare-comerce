@@ -24,11 +24,12 @@ export function Details() {
     return (
         <DivContainer> 
         {card.map((product) => {
-            if (product.id === identificationPage) {
+            if (product.id == identificationPage) {
                 return <Section key={product.id}>
                             <DivImg>
                                 <Img src={product.img} alt={product.name}/>
                             </DivImg>
+
                             <Article>
                                 <H1>{product.name}</H1>
                                 <SpanOld>De R${product.oldPrice} por</SpanOld>
