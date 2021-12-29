@@ -21,6 +21,7 @@ export function Product() {
                         alt={product.name}
                         category={product.category}
                         price={product.price}
+                        installments={product.installments}
                     />
                 )}
             </Unlist>

@@ -12,7 +12,7 @@ import {
     Button
 } from './styles';
 
-export function Cards({ id, name, img, category, price }) {
+export function Cards({ id, name, img, category, price, installments }) {
 
     return (
         <ListContainerCard>
@@ -27,7 +27,7 @@ export function Cards({ id, name, img, category, price }) {
                 </DivName>
                 <DivPrices>
                     <Paragraph>R$ {price}</Paragraph>
-                    <Span>Parcelas</Span>
+                    <Span>{installments}</Span>
                 </DivPrices>
                 <AnchorButtons to={`/details/${id}`}>VER MAIS</AnchorButtons>
                 <Button>ADICIONAR</Button>
