@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
     ListContainerCard,
     ContainerBreathe,
@@ -13,6 +14,11 @@ import {
 } from './styles';
 
 export function Cards({ id, name, img, category, price, installments }) {
+
+    function AddItemCart(idItem) {
+
+        localStorage.setItem("IdItemCart", idItem.target.value)
+    }
 
     return (
         <ListContainerCard>
@@ -30,7 +36,7 @@ export function Cards({ id, name, img, category, price, installments }) {
                     <Span>{installments}</Span>
                 </DivPrices>
                 <AnchorButtons to={`/details/${id}`}>VER MAIS</AnchorButtons>
-                <Button>ADICIONAR</Button>
+                <Button value={id} onClick={AddItemCart}>ADICIONAR</Button>
             </ContainerBreathe>
         </ListContainerCard>
     )
