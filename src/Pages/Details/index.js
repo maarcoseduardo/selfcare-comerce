@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useCard } from '../../Context'
+import { AddItemCart, useCard } from '../../Context'
 
 import {
     DivContainer, 
@@ -36,7 +36,7 @@ export function Details() {
                                     <Span>R${product.price}</Span>
                                 <Paragraph>{product.desc}</Paragraph>
                                 <HR/>
-                                <Button src="">Adicionar ao carrinho</Button>
+                                <Button value={product.id} onClick={AddItemCart}>Adicionar ao carrinho</Button>
                             </Article>
                         </Section>
                 }

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { AddItemCart } from '../../../Context';
 import {
     ListContainerCard,
     ContainerBreathe,
@@ -15,10 +15,6 @@ import {
 
 export function Cards({ id, name, img, category, price, installments }) {
 
-    function AddItemCart(idItem) {
-
-        localStorage.setItem("IdItemCart", idItem.target.value)
-    }
 
     return (
         <ListContainerCard>
