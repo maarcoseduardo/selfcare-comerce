@@ -41,7 +41,9 @@ export function useCard() {
 
 export function AddItemCart(idItem) {
 
-    let ItensInCart = JSON.parse(localStorage.getItem('IdItemCart')) || []
+    const ItemsInCart = JSON.parse(localStorage.getItem('IdItemCart')) || []
 
-    localStorage.setItem('IdItemCart', JSON.stringify([...ItensInCart, idItem.target.value]))
+    localStorage.setItem('IdItemCart', JSON.stringify([...ItemsInCart, idItem.target.value]))
+
+    
 }

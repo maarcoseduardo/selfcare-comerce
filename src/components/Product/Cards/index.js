@@ -15,7 +15,6 @@ import {
 
 export function Cards({ id, name, img, category, price, installments }) {
 
-
     return (
         <ListContainerCard>
             <ContainerBreathe >

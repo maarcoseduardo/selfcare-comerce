@@ -1,20 +1,9 @@
 import React from 'react';
-
-import { useCard } from '../../Context'
-import AnnmarieImg from './Annmarie.jpg'
+import { ItemInCart } from '../../components/ItemInCart';
 
 import {
     Container,
-    Section,
     Tr,
-    Div,
-    H3,
-    Img,
-    Span,
-    DivAddRemove,
-    DivGrid,
-    SpanGrid,
-    ButtonAddRemove,
     ContainerBuy,
     TableBuy,
     TbodyBuy,
@@ -32,28 +21,8 @@ export function Cart() {
 
     return (
         <Container>
-            <Section>
-                <Div>
-                    <Img src={AnnmarieImg}/>
-                    <H3>Nome daaaaaaaaao Produto</H3>
-                </Div>
-                <Span>R$ 15000,0</Span>
-                <DivAddRemove>
-                    <DivGrid>
-                        <SpanGrid>
-                            <ButtonAddRemove>-</ButtonAddRemove>
-                        </SpanGrid>
-                        <SpanGrid>0</SpanGrid>
-                        <SpanGrid>
-                            <ButtonAddRemove>+</ButtonAddRemove>
-                        </SpanGrid>
-                    </DivGrid>
-                    <SpanGrid>
-                        <ButtonAddRemove>remover</ButtonAddRemove>
-                    </SpanGrid>
-                </DivAddRemove>
-                <Span>R$ 1010,0</Span>
-            </Section>
+
+            <ItemInCart />
             <ContainerBuy>
                 <H3Buy>Resumo do Pedido</H3Buy>
                 <TableBuy>
@@ -71,7 +40,7 @@ export function Cart() {
                                 <SpanSend>Calcular Frete</SpanSend>
                             </TdBuy>
                             <TdBuy>
-                                <Input type="number"/>
+                                <Input type="number" />
                             </TdBuy>
                         </Tr>
                         <Tr>
