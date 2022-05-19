@@ -6,18 +6,17 @@ import { Main } from './Pages/Main';
 
 export function Routes() {
 
-    return (
-
-        <Switch>
-            <Route exact path="/">
-                <Main />
-            </Route>
-            <Route exact path="/details/:identificationPage">
-                <Details />
-            </Route>
-            <Route exact path="/cart">
-                <Cart />
-            </Route>
-        </Switch>
-    );
+  return (
+    <Switch>
+      <Route exact path="/">
+        <Main />
+      </Route>
+      <Route exact path="/details/:identificationPage">
+        <Details />
+      </Route>
+      <Route exact path="/cart">
+        <Cart />
+      </Route>
+    </Switch>
+  );
 }

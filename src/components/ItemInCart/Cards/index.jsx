@@ -15,7 +15,6 @@ export function Cards({img, name, price, priceTotal, count}) {
 
     return (
         <React.Fragment>
-            
             <Section>
                 <Div>
                     <Img src={img} alt={name} />

@@ -21,8 +21,9 @@ export function Cart() {
 
     return (
         <Container>
-
+            
             <ItemInCart />
+
             <ContainerBuy>
                 <H3Buy>Resumo do Pedido</H3Buy>
                 <TableBuy>

@@ -10,7 +10,8 @@ export function ItemInCart() {
 
     return (
         <React.Fragment>
-             {card.map(item => item.inCart ?  <Cards
+             {card.map(item => item.inCart ?  
+                    <Cards
                         key={item.id}
                         id={item.id}
                         name={item.name}
@@ -18,8 +19,10 @@ export function ItemInCart() {
                         alt={item.name}
                         price={item.price}
                         priceTotal={item.total}
-                        count={item.count}
-                    /> : '')}
+                        count={item.count} 
+                    /> 
+                    :
+                     '')}
         </React.Fragment>
     )
 }

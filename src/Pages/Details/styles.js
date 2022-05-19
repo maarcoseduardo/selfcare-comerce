@@ -1,55 +1,47 @@
 import styled from "styled-components";
 
 export const DivContainer = styled.div`
-
-    height: 580px;
+    max-width: 1440px;
     width: 100%;
-    padding: 25px 40px;  //editar respiro dos outros componentes
-
-    /* max-height: 1000px; */
+    padding: 15px 70px;
+    margin: 0 auto;  
 `;
 
-// export const Header = styled.header` //HEADER DE NAVEGAÇÃO ENTRE PAGINAS
-//     width: 100%;
-//     height: 50px;
-
-// `;
-
 export const Section = styled.section`
-
-    width: 100%;
-    height: 495px;
     display: flex;
     justify-content: space-between;
+    
+    @media only screen and (min-width: 200px) and (max-width: 830px) {
+      flex-direction: column;
+      align-items: center;
+    }
 `;
 
 export const DivImg = styled.div`
-
-    width: 400px;
-    margin: 30px 70px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
 `;
 
 export const Img = styled.img`
-
     width: 350px;
     max-width: 100%;
     padding: 20px;
-
     border: 1px solid var(--other-text-green);
-
 `;
 
 export const Article = styled.article`
-
-    width: 750px;
-    max-width: 60%;
+    max-width: 750px;
+    width: 100%;
     padding: 20px;
-    
+`;
+
+export const Div = styled.div`
 `;
 
 export const H1 = styled.h1`
-
     font-size: 3rem;
     margin-bottom: 30px;
 `;
@@ -57,40 +49,35 @@ export const H1 = styled.h1`
 export const SpanOld = styled.span`
     display: block;
     margin-bottom: 15px;
-    
 `;
 
 export const Span = styled.span`
     display: block;
-
     margin-bottom: 15px;
-
     font-size: 1.5em;
     font-weight: bold;
-
 `;
 
 export const HR = styled.hr`
-
     margin: 30px 0;
-
 `;
-
 export const Paragraph = styled.p`
-
     font-size: 1rem;
     margin-bottom: 15px;
-
 `;
 
+export const DivButton = styled.div`
+    display: flex;
+    justify-content: center;
+`;
 export const Button = styled.button`
-
+    max-width: 550px;
     width: 100%;
-
-    padding: 5px 20px;
-    
+    padding: 10px 0;
+    color: #FFF;
     background: var(--other-text-green);
-  
     font-size: 1.5rem;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
 `;

@@ -18,7 +18,7 @@ createServer({
           mark: "Mani Moisture",
           shortDesc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.",
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
-          inCart: false,
+          inCart: true,
           count: 0,
           total: 0
         },
