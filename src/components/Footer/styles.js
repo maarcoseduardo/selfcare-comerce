@@ -66,11 +66,9 @@ export const Input = styled.input`
 export const Button = styled.button`
   width: 30%;
   height: 40px;
-
   color: white;
   font-weight: bold;
-
   background: var(--other-text-green);
-
+  border: none;
   border-radius: 0 5px 5px 0;
 `;

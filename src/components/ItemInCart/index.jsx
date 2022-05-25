@@ -1,9 +1,6 @@
 import React from "react";
-
 import { Cards } from "./Cards";
-
 import { useCard } from '../../Context'
-
 export function ItemInCart() {
 
     const { card } = useCard();

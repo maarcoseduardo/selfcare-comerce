@@ -78,6 +78,7 @@ export const Button = styled.button`
     background: var(--other-text-green);
     font-size: 1.5rem;
     font-weight: bold;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
 `;

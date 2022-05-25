@@ -8,6 +8,7 @@ import { Banner } from './components/Banner';
 import { CardProvider } from './Context';
 
 export function App() {
+
   return (
     <React.Fragment>
       <CardProvider>
