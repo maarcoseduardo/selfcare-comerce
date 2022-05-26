@@ -14,6 +14,10 @@ export const Container = styled.div`
 
 export const Table = styled.table`
   width: 100%;
+  @media screen and (min-width: 200px) and (max-width: 550px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const Thead = styled.thead`
@@ -23,10 +27,22 @@ export const Tr = styled.tr`
 `;
 
 export const Th = styled.th`
+@media screen and (min-width: 200px) and (max-width: 550px) {
+    display: flex;
+    height: 80px;
+    width: 120px;
+    align-items: center;
+  }
 `;
 
 export const ThProduto = styled.th`
   width: 300px;
+  @media screen and (min-width: 200px) and (max-width: 550px) {
+    display: flex;
+    height: 80px;
+    width: 120px;
+    align-items: center;
+  }
 `;
 
 export const DivProduto = styled.div`
@@ -43,62 +59,47 @@ export const Tbody = styled.tbody`
 export const Td = styled.td`
 text-align: center;
 padding: 5px 0;
+@media screen and (min-width: 200px) and (max-width: 550px) {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const TdProduto = styled.td`
+@media screen and (min-width: 200px) and (max-width: 550px) {
+    display: flex;
+    height: 80px;
+    align-items: center;
+  }
 `;
 
-// export const Section = styled.section`
-//     display: flex;
-//     justify-content: space-between;
-//     max-width: 730px;
-//     width: 100%;
-//     height: 90px;
-//     align-items: center;
+export const TdGrid = styled.td`
+text-align: center;
+padding: 5px 0;
+  @media screen and (min-width: 200px) and (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+`;
 
-//     @media screen and (min-width: 1080px) and (max-width: 1250px) {
-//         transition: 0.4s;
-//         max-width: 600px;
-//     }
-//     @media screen and (min-width: 550px) and (max-width: 1080px) {
-//         width: 100%;
-//         max-width: 1080px;
-//     }
-//     @media screen and (min-width: 200px) and (max-width: 580px) {
-//         flex-direction: column;
-//         height: 250px;
-//     }
-// `;
-
-// export const Div = styled.div`
-//     display: flex;
-//     justify-content: space-between;
-//     width: 280px; 
-//     padding: 10px;
-//     align-items: center;
-
-//     @media screen and (min-width: 580px) and (max-width: 1080px) {
-//         width: 340px;
-//     }
-//     @media screen and (min-width: 200px) and (max-width: 580px) {
-//         display: block;
-//         transition: none;
-//         width: 100%;
-//     }
-// `;
-
-export const H3 = styled.h3`
+export const H4 = styled.h4`
     max-width:300px;
 `;
 
 export const Img = styled.img`
-    width: 75px;
-    height: 75px;
+  width: 75px;
+  height: 75px;
+    
+  @media screen and (min-width: 200px) and (max-width: 550px) {
+      width: 50px;
+      height: 50px;
+    }
 `;
-
-// export const DivPrice = styled.div`
-//     padding: 5px;
-// `;
 
 export const DivGrid = styled.div`
     display: grid;

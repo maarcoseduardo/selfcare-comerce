@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  H3,
+  H4,
   Img,
   DivGrid,
   SpanGrid,
@@ -14,6 +14,7 @@ import {
   DivProduto,
   Tbody,
   Td,
+  TdGrid,
   TdProduto,
 } from "./styles";
 
@@ -35,11 +36,11 @@ export function Cards({ img, name, price, priceTotal, count }) {
               <TdProduto>
                 <DivProduto>
                   <Img src={img} alt={name} />
-                  <H3>{name}</H3>
+                  <H4>{name}</H4>
                 </DivProduto>
               </TdProduto>
               <Td>{price}</Td>
-              <Td>
+              <TdGrid>
                 <DivGrid>
                   <SpanGrid>
                     <ButtonAddRemove>-</ButtonAddRemove>
@@ -52,7 +53,7 @@ export function Cards({ img, name, price, priceTotal, count }) {
                 <SpanGrid>
                   <ButtonAddRemove>remover</ButtonAddRemove>
                 </SpanGrid>
-              </Td>
+              </TdGrid>
               <Td>{priceTotal}</Td>
             </Tr>
           </Tbody>

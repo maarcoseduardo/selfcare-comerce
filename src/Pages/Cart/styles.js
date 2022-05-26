@@ -8,15 +8,11 @@ export const Container = styled.section`
     width: 100%;
     padding: 15px 70px;
     margin: 0 auto;
-
+    color: grey;
+    
     @media screen and (min-width: 200px) and (max-width: 1080px) {
        display: block;
     }
-
-    /* @media screen and (min-width: 400px) and (max-width: 1130px) {
-        display: block;
-        height: 750px;
-    } */
 `;
 
 export const H2 = styled.h2`
@@ -25,14 +21,6 @@ export const H2 = styled.h2`
 `;
 
 export const Tr = styled.tr`
-`;
-export const Td = styled.td`
-
-`;
-
-export const TdItem = styled.td`
-    width: 100px;
-    text-align: center;
 `;
 
 export const ContainerBuy = styled.div`
@@ -59,6 +47,10 @@ export const TdBuy = styled.td`
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid var(--line-division);
+
+    @media screen and (min-width: 200px) and (max-width: 550px) {
+       padding: 0;
+    }
 `;
 export const SpanSend = styled.span`
 
