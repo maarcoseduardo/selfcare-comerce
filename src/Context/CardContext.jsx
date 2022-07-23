@@ -6,10 +6,11 @@ const CardContext = createContext();
 
 export function CardProvider({ children }) {
   const [card, setCard] = useState([]);
-
+  
   useEffect(() => {
     api.get("/").then((response) => setCard(response.data));
   }, []);
+  
   return (
     <CardContext.Provider
       value={{
@@ -28,10 +29,4 @@ export function useCard() {
   const { card, setCard } = context;
 
   return { card, setCard };
-}
-
-export function AddItemCart(idItem) {
-  const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
-
-  localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, idItem.target.value]));
 }

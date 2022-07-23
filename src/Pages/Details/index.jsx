@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { AddItemCart, useCard } from "../../Context";
+import { useCard } from "../../Context/CardContext";
+import { useCart } from "../../Context/CartContext";
 
 import {
   DivContainer,
@@ -20,7 +21,17 @@ import {
 
 export function Details() {
   const { card } = useCard();
+  const { productInCart, setProductInCart } = useCart();
   const { identificationPage } = useParams();
+
+  function AddItemCart(idItem) {
+    const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
+    localStorage.setItem("IdItemCart",JSON.stringify([...ItemsInCart, idItem.target.value]));
+
+    const cardFiltered = card.find((product) => product.id == idItem.target.value);
+
+    setProductInCart([...productInCart, cardFiltered]);
+  }
 
   return (
     <DivContainer>

@@ -3,7 +3,6 @@ import imgStar from '../../assets/Images/Star.svg';
 import imgUser from '../../assets/Images/User.svg';
 import imgCart from '../../assets/Images/Cart.svg';
 import imgMagnifyingGlass from '../../assets/Images/MagnifyingGlass.svg';
-
 import {
   HeaderContainer,
   HeaderTop,

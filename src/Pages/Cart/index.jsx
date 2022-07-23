@@ -1,8 +1,8 @@
 import React from "react";
-import { ItemInCart } from "../../components/ItemInCart";
-
+import { ItemInCart } from '../../components/ItemInCart'
 import {
   Container,
+  ContainerCart,
   Tr,
   ContainerBuy,
   TableBuy,
@@ -18,9 +18,12 @@ import {
 } from "./styles";
 
 export function Cart() {
+  
   return (
     <Container>
-      <ItemInCart />
+      <ContainerCart>
+        <ItemInCart />
+      </ContainerCart>
       <ContainerBuy>
         <H3Buy>Resumo do Pedido</H3Buy>
         <TableBuy>
@@ -30,7 +33,7 @@ export function Cart() {
                 <SpanBuy>Subtotal:</SpanBuy>
               </TdBuy>
               <TdBuy>
-                <SpanBuy>VALOR</SpanBuy>
+                <SpanBuy>0</SpanBuy>
               </TdBuy>
             </Tr>
             <Tr>
@@ -54,7 +57,7 @@ export function Cart() {
                 <SpanBuy>Total:</SpanBuy>
               </TdBuy>
               <TdBuy>
-                <SpanBuy>Valor Total</SpanBuy>
+                <SpanBuy>0</SpanBuy>
               </TdBuy>
             </Tr>
             <TrButton>

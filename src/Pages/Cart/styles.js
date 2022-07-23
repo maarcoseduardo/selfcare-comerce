@@ -8,11 +8,14 @@ export const Container = styled.section`
     width: 100%;
     padding: 15px 70px;
     margin: 0 auto;
-    color: grey;
     
     @media screen and (min-width: 200px) and (max-width: 1080px) {
        display: block;
     }
+`;
+
+export const ContainerCart = styled.div`
+    display:block;
 `;
 
 export const H2 = styled.h2`

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
   max-width: 730px;
   width: 100%;
@@ -24,6 +25,7 @@ export const Thead = styled.thead`
 `;
 
 export const Tr = styled.tr`
+
 `;
 
 export const Th = styled.th`
