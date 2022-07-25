@@ -22,13 +22,14 @@ import { useCart } from "../../Context/CartContext";
 export function ItemInCart() {
   const {productInCart} = useCart();
 
+  //criar a funcao de contador aqui.
 
-  //teste funcao
   function AddOneMoreItem(id){
     const copyProduct = [...productInCart]
 
     const item = copyProduct.find((product) => product.id==id.target.value)
 
+    console.log(item.count, {count: item.count + 1});
   }
 
   return (
