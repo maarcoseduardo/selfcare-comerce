@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   H4,
   Img,
@@ -21,6 +21,15 @@ import { useCart } from "../../Context/CartContext";
 
 export function ItemInCart() {
   const {productInCart} = useCart();
+
+
+  //teste funcao
+  function AddOneMoreItem(id){
+    const copyProduct = [...productInCart]
+
+    const item = copyProduct.find((product) => product.id==id.target.value)
+
+  }
 
   return (
     <React.Fragment>
@@ -52,7 +61,7 @@ export function ItemInCart() {
                       </SpanGrid>
                       <SpanGrid>{product.count}</SpanGrid>
                       <SpanGrid>
-                        <ButtonAddRemove>+</ButtonAddRemove>
+                        <ButtonAddRemove value={product.id} onClick={AddOneMoreItem}>+</ButtonAddRemove>
                       </SpanGrid>
                     </DivGrid>
                     <SpanGrid>
