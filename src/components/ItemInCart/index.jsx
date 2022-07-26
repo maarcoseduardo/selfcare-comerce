@@ -22,12 +22,9 @@ export function ItemInCart() {
 
   const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart"))
   
-
   function AddOneMoreItem(id){
-
     //edit
-    const item = ItemsInCart.find((product) => product.id==id)
-
+    // const item = ItemsInCart.find((product) => product.id===id)
   }
 
   return (

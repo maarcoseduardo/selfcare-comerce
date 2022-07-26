@@ -74,6 +74,7 @@ export const AnchorButtons = styled(Link)`
     border-radius: 3px;
     text-decoration: none;
 `;
+
 export const Button = styled.button`
     background: #000;
     color: #FFF;

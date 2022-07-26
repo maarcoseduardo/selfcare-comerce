@@ -22,7 +22,8 @@ export function Product() {
   const {productInCart, setProductInCart} = useCart();
 
   function AddItemCart(idItem) {
-    const cardFiltered = card.find((product) => product.id==idItem);
+    const copyCard = [...card] 
+    const cardFiltered = copyCard.find((product) => product.id===idItem);
 
     if(cardFiltered){
       cardFiltered.inCart = true;

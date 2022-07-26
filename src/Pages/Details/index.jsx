@@ -25,12 +25,13 @@ export function Details() {
   const { identificationPage } = useParams();
 
   function AddItemCart(idItem) {
-    const cardFiltered = card.find((product) => product.id==idItem);
+    const copyCard = [...card] 
+    const cardFiltered = copyCard.find((product) => product.id===idItem);
 
     if(cardFiltered){
       cardFiltered.inCart = true;
     }
-    
+
     const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
     localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));
     
@@ -40,7 +41,7 @@ export function Details() {
   return (
     <DivContainer>
       {card.map((product) => {
-        if (product.id == identificationPage) {
+        if (product.id === identificationPage) {
           return (
             <Section key={product.id}>
               <DivImg>
