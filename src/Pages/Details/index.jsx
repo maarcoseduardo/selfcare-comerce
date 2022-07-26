@@ -27,6 +27,10 @@ export function Details() {
   function AddItemCart(idItem) {
     const cardFiltered = card.find((product) => product.id==idItem);
 
+    if(cardFiltered){
+      cardFiltered.inCart = true;
+    }
+    
     const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
     localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));
     

@@ -20,9 +20,13 @@ import {
 export function Product() {
   const { card } = useCard();
   const {productInCart, setProductInCart} = useCart();
-  
+
   function AddItemCart(idItem) {
     const cardFiltered = card.find((product) => product.id==idItem);
+
+    if(cardFiltered){
+      cardFiltered.inCart = true;
+    }
 
     const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
     localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));

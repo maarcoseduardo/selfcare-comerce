@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   H4,
   Img,
@@ -17,17 +17,17 @@ import {
   TdGrid,
   TdProduto,
 } from "./styles";
-import { useCart } from "../../Context/CartContext";
 
 export function ItemInCart() {
-  const {productInCart} = useCart();
+
+  const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart"))
+  
 
   function AddOneMoreItem(id){
-    const copyProduct = [...productInCart]
 
-    const item = copyProduct.find((product) => product.id==id)
+    //edit
+    const item = ItemsInCart.find((product) => product.id==id)
 
-    console.log(item[id].count, {count: item.count + 1});
   }
 
   return (
@@ -43,7 +43,7 @@ export function ItemInCart() {
             </Tr>
           </Thead>
           <Tbody>
-            {productInCart.map((product) => {
+            {ItemsInCart?.map((product) => {
               return (
                 <Tr key={product.id}>
                   <TdProduto>
