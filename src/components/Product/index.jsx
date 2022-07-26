@@ -22,10 +22,10 @@ export function Product() {
   const {productInCart, setProductInCart} = useCart();
   
   function AddItemCart(idItem) {
+    const cardFiltered = card.find((product) => product.id==idItem);
+
     const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
-    localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, idItem.target.value]));
-  
-    const cardFiltered = card.find((product) => product.id==idItem.target.value);
+    localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));
     
     setProductInCart([...productInCart, cardFiltered])
   }
@@ -51,7 +51,7 @@ export function Product() {
                 <AnchorButtons to={`/details/${product.id}`}>
                   VER MAIS
                 </AnchorButtons>
-                <Button value={product.id} onClick={AddItemCart}>
+                <Button onClick={() => AddItemCart(product.id)}>
                   ADICIONAR
                 </Button>
               </DivButtons>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   H4,
   Img,
@@ -22,14 +22,12 @@ import { useCart } from "../../Context/CartContext";
 export function ItemInCart() {
   const {productInCart} = useCart();
 
-  //criar a funcao de contador aqui.
-
   function AddOneMoreItem(id){
     const copyProduct = [...productInCart]
 
-    const item = copyProduct.find((product) => product.id==id.target.value)
+    const item = copyProduct.find((product) => product.id==id)
 
-    console.log(item.count, {count: item.count + 1});
+    console.log(item[id].count, {count: item.count + 1});
   }
 
   return (
@@ -62,7 +60,7 @@ export function ItemInCart() {
                       </SpanGrid>
                       <SpanGrid>{product.count}</SpanGrid>
                       <SpanGrid>
-                        <ButtonAddRemove value={product.id} onClick={AddOneMoreItem}>+</ButtonAddRemove>
+                        <ButtonAddRemove onClick={() => AddOneMoreItem(product.id)}>+</ButtonAddRemove>
                       </SpanGrid>
                     </DivGrid>
                     <SpanGrid>

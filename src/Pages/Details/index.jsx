@@ -25,12 +25,12 @@ export function Details() {
   const { identificationPage } = useParams();
 
   function AddItemCart(idItem) {
+    const cardFiltered = card.find((product) => product.id==idItem);
+
     const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
-    localStorage.setItem("IdItemCart",JSON.stringify([...ItemsInCart, idItem.target.value]));
-
-    const cardFiltered = card.find((product) => product.id == idItem.target.value);
-
-    setProductInCart([...productInCart, cardFiltered]);
+    localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));
+    
+    setProductInCart([...productInCart, cardFiltered])
   }
 
   return (
@@ -51,7 +51,7 @@ export function Details() {
                   <HR />
                 </Div>
                 <DivButton>
-                  <Button value={product.id} onClick={AddItemCart}>
+                  <Button onClick={() => AddItemCart(product.id)}>
                     Adicionar ao carrinho
                   </Button>
                 </DivButton>
