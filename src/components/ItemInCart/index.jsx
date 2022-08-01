@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   H4,
   Img,
@@ -19,12 +19,23 @@ import {
 } from "./styles";
 
 export function ItemInCart() {
-
   const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart"))
-  
+  //edit: falta atualizar useEffect
+  useEffect(() => {
+
+  },[])
+
   function AddOneMoreItem(id){
-    //edit
-    // const item = ItemsInCart.find((product) => product.id===id)
+    const tempProduct = [...ItemsInCart]
+    const selectedProduct = ItemsInCart.find((product) => product.id===id)
+
+    const index = tempProduct.indexOf(selectedProduct);
+
+    const product = tempProduct[index];
+
+    product.count = product.count + 1
+
+    localStorage.setItem("IdItemCart", JSON.stringify(tempProduct))
   }
 
   return (
