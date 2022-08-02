@@ -59,15 +59,18 @@ export function ItemInCart() {
     setProductInCart([...productInCart, tempProduct])
   }
 
-  /*
-  function RemoveThisItem(){
+  function RemoveThisItem(id){
     const tempProduct = [...ItemsInCart]
     const selectedProduct = ItemsInCart.find((product) => product.id===id)
 
     const index = tempProduct.indexOf(selectedProduct);
 
     const product = tempProduct[index];
-  } */
+
+    sessionStorage.removeItem("IdItemCart", product)
+    
+    setProductInCart([...productInCart, tempProduct])
+  }
 
   return (
     <React.Fragment>
@@ -103,7 +106,7 @@ export function ItemInCart() {
                       </SpanGrid>
                     </DivGrid>
                     <SpanGrid>
-                      <ButtonAddRemove>remover</ButtonAddRemove>
+                      <ButtonAddRemove onClick={() => RemoveThisItem(product.id)}>remover</ButtonAddRemove>
                     </SpanGrid>
                   </TdGrid>
                   <Td>{product.total}</Td>
