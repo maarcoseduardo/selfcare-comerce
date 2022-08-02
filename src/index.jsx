@@ -12,7 +12,7 @@ createServer({
           name: "Bamboo Pibers",
           img: ["/imgs/BambooPibers.jpg"],
           oldPrice: 80.8,
-          price: 50.2,
+          price: 50.5,
           installments: '12x de R$ 4,18',
           category: "SHAMPOO",
           mark: "Mani Moisture",
@@ -20,6 +20,7 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: true,
           count: 1,
+          total: 50.5
         },
         {
           id: 2,
@@ -34,6 +35,7 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: true,
           count: 1,
+          total: 60.5
         },
         {
           id:3,
@@ -48,6 +50,7 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
+          total: 70
         },
         {
           id: 4,
@@ -62,6 +65,7 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
+          total: 60.5
         },
         {
           id: 5,
@@ -76,6 +80,7 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
+          total: 90.5
         },
         {
           id: 6,
@@ -90,6 +95,7 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
+          total: 60.5
         },
         {
           id: 7,
@@ -104,13 +110,14 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
+          total: 40.5
         },
         {
           id: 8,
           name: "Relieft",
           img: ["/imgs/Relieft.jpg"],
           oldPrice: 120.5,
-          price: 83.5,
+          price: 85.5,
           installments: '12x de R$ 6,95',
           category: "SHOWER",
           mark: "PHARMA HEMP",
@@ -118,13 +125,14 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
+          total: 85.5
         },
         {
           id: 9,
           name: "CREAM-EYE",
           img: ["/imgs/Annmarie.jpg"],
           oldPrice: 43.4,
-          price: 35.4,
+          price: 35.5,
           installments: '12x de R$ 2,95',
           category: "EYES",
           mark: "ANNMARIE",
@@ -132,6 +140,7 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
+          total: 35.5
         }
       ]
     })

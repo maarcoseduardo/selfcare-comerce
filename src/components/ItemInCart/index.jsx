@@ -59,6 +59,16 @@ export function ItemInCart() {
     setProductInCart([...productInCart, tempProduct])
   }
 
+  /*
+  function RemoveThisItem(){
+    const tempProduct = [...ItemsInCart]
+    const selectedProduct = ItemsInCart.find((product) => product.id===id)
+
+    const index = tempProduct.indexOf(selectedProduct);
+
+    const product = tempProduct[index];
+  } */
+
   return (
     <React.Fragment>
       <Container>
@@ -96,7 +106,7 @@ export function ItemInCart() {
                       <ButtonAddRemove>remover</ButtonAddRemove>
                     </SpanGrid>
                   </TdGrid>
-                  <Td>{product.price}</Td>
+                  <Td>{product.total}</Td>
                 </Tr>
               );
             })}
