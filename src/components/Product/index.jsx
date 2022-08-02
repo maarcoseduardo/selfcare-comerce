@@ -29,8 +29,8 @@ export function Product() {
       cardFiltered.inCart = true;
     }
 
-    const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart")) || [];
-    localStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));
+    const ItemsInCart = JSON.parse(sessionStorage.getItem("IdItemCart")) || [];
+    sessionStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));
     
     setProductInCart([...productInCart, cardFiltered])
   }

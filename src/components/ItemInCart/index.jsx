@@ -19,7 +19,8 @@ import {
 } from "./styles";
 
 export function ItemInCart() {
-  const ItemsInCart = JSON.parse(localStorage.getItem("IdItemCart"))
+  const ItemsInCart = JSON.parse(sessionStorage.getItem("IdItemCart"))
+  
   //edit: falta atualizar useEffect
   useEffect(() => {
 
@@ -35,7 +36,9 @@ export function ItemInCart() {
 
     product.count = product.count + 1
 
-    localStorage.setItem("IdItemCart", JSON.stringify(tempProduct))
+    product.total = product.price * product.count
+
+    sessionStorage.setItem("IdItemCart", JSON.stringify(tempProduct))
   }
 
   return (
