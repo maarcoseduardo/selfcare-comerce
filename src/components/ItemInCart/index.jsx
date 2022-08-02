@@ -18,13 +18,12 @@ import {
   TdProduto,
 } from "./styles";
 
+import { useCart } from '../../Context/CartContext';
+
 export function ItemInCart() {
   const ItemsInCart = JSON.parse(sessionStorage.getItem("IdItemCart"))
+  const {productInCart, setProductInCart} = useCart();
   
-  //edit: falta atualizar useEffect
-  useEffect(() => {
-
-  },[])
 
   function AddOneMoreItem(id){
     const tempProduct = [...ItemsInCart]
@@ -39,6 +38,25 @@ export function ItemInCart() {
     product.total = product.price * product.count
 
     sessionStorage.setItem("IdItemCart", JSON.stringify(tempProduct))
+    
+    setProductInCart([...productInCart, tempProduct])
+  }
+
+  function RemoveOneMoreItem(id){
+    const tempProduct = [...ItemsInCart]
+    const selectedProduct = ItemsInCart.find((product) => product.id===id)
+
+    const index = tempProduct.indexOf(selectedProduct);
+
+    const product = tempProduct[index];
+
+    product.count = product.count - 1
+
+    product.total = product.price * product.count
+
+    sessionStorage.setItem("IdItemCart", JSON.stringify(tempProduct))
+    
+    setProductInCart([...productInCart, tempProduct])
   }
 
   return (
@@ -67,7 +85,7 @@ export function ItemInCart() {
                   <TdGrid>
                     <DivGrid>
                       <SpanGrid>
-                        <ButtonAddRemove>-</ButtonAddRemove>
+                        <ButtonAddRemove onClick={() => RemoveOneMoreItem(product.id)}>-</ButtonAddRemove>
                       </SpanGrid>
                       <SpanGrid>{product.count}</SpanGrid>
                       <SpanGrid>
@@ -78,7 +96,7 @@ export function ItemInCart() {
                       <ButtonAddRemove>remover</ButtonAddRemove>
                     </SpanGrid>
                   </TdGrid>
-                  <Td>{product.total}</Td>
+                  <Td>{product.price}</Td>
                 </Tr>
               );
             })}

@@ -1,6 +1,5 @@
 import React from "react";
 import { useCard } from "../../Context/CardContext";
-import { useCart } from "../../Context/CartContext";
 import {
   Unlist,
   ListContainerCard,
@@ -19,7 +18,6 @@ import {
 
 export function Product() {
   const { card } = useCard();
-  const {productInCart, setProductInCart} = useCart();
 
   function AddItemCart(idItem) {
     const copyCard = [...card] 
@@ -31,8 +29,6 @@ export function Product() {
 
     const ItemsInCart = JSON.parse(sessionStorage.getItem("IdItemCart")) || [];
     sessionStorage.setItem("IdItemCart", JSON.stringify([...ItemsInCart, cardFiltered]));
-    
-    setProductInCart([...productInCart, cardFiltered])
   }
 
   return (

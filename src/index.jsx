@@ -20,7 +20,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: true,
           count: 1,
-          total: 50.2
         },
         {
           id: 2,
@@ -35,7 +34,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: true,
           count: 1,
-          total: 60.5
         },
         {
           id:3,
@@ -50,7 +48,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
-          total: 70
         },
         {
           id: 4,
@@ -65,7 +62,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
-          total: 60.5
         },
         {
           id: 5,
@@ -80,7 +76,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
-          total: 90.5
         },
         {
           id: 6,
@@ -95,7 +90,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
-          total: 60.5
         },
         {
           id: 7,
@@ -110,7 +104,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
-          total: 40.5
         },
         {
           id: 8,
@@ -125,7 +118,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
-          total: 83.5
         },
         {
           id: 9,
@@ -140,7 +132,6 @@ createServer({
           desc: "Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.",
           inCart: false,
           count: 1,
-          total: 35.4
         }
       ]
     })

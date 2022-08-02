@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { ItemInCart } from '../../components/ItemInCart'
 import {
   Container,
@@ -19,6 +20,10 @@ import {
 
 export function Cart() {
   
+  const [subTotal, setSubTotal] = useState(0);
+  const [total, setTotal] = useState(0);
+
+
   return (
     <Container>
       <ContainerCart>
@@ -33,7 +38,7 @@ export function Cart() {
                 <SpanBuy>Subtotal:</SpanBuy>
               </TdBuy>
               <TdBuy>
-                <SpanBuy>0</SpanBuy>
+                <SpanBuy>{subTotal}</SpanBuy>
               </TdBuy>
             </Tr>
             <Tr>
@@ -57,7 +62,7 @@ export function Cart() {
                 <SpanBuy>Total:</SpanBuy>
               </TdBuy>
               <TdBuy>
-                <SpanBuy>0</SpanBuy>
+                <SpanBuy>{total}</SpanBuy>
               </TdBuy>
             </Tr>
             <TrButton>
